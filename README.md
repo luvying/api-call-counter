@@ -18,7 +18,7 @@ https://github.com/cxying/api-call-counter.git
 ```
 #### 2 使用
 2.1 复制core的文件到自己php服务器上对应文件夹内  
-2.2 浏览器访问gendb.php，将自动生成数据库文件，并保存在部署目录下db/pv.db下
+2.2 浏览器访问gendb.php，将自动生成数据库文件，并保存在部署目录下db/pv.db下  
 2.3 参考example.php将下面的代码加到需要统计的api或页面中  
 ```php
 // 定义实际运行统计程序的路径,即pv.php的绝对路径
