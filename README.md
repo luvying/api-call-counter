@@ -29,7 +29,7 @@ include('runpv.php');
 
 #### 3 查询数据
 可通过query.php注入SQL语句进行查询
-任何人都能够注入SQL执行SELECT语句，但无法修改数据
+任何人都能够注入SQL执行SELECT语句，但无法修改数据  
 可以自定义一个key来防止他人修改数据库，用这个key就可以执行一些敏感的语句（增删改）
 ```
 example: 
@@ -41,4 +41,4 @@ example:
 示例：
 ![image](https://user-images.githubusercontent.com/46587259/81475620-f5a44580-923f-11ea-992c-1ab3ab52490a.png)
 ### 其他说明
-其实也就个很简单的脚本，还是比较容易看得懂的~代码里也有相应备注~
+其实也就个很简单的脚本，还是比较容易看得懂的~ 代码里也有相应备注~
