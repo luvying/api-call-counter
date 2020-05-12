@@ -1,5 +1,5 @@
 <?php
-// 从acgurl.php传过来的参数
+// 最上层php传过来的参数
 $params = getopt('a:b:');
 $ip = $params['a'];
 $ref = $params['b'];
