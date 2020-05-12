@@ -22,7 +22,7 @@ https://github.com/cxying/api-call-counter.git
 2.3 参考example.php将下面的代码加到需要统计的api或页面中  
 ```php
 // 定义实际运行统计程序的路径,即pv.php的绝对路径
-$path = '/www/open/acgimg/pv.php';  
+$path = '/www/xxx/xxx/pv.php';  
 include('runpv.php');
 ```
 （ps：runpv.php用了popen，所以要注意修改此处的$path，用popen是为了不阻塞正常页面的访问，曾经尝试过直接include('pv.php')文件，并发的情况下统计数据来不及写入数据库而阻塞，导致被统计页面无法正常响应，所以用多加了runpv.php去间接异步调用pv.php了。当然这种情况下统计数据肯定会有一定不准确，但总比因为一个统计导致页面挂了好吧~）
