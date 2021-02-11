@@ -4,7 +4,9 @@ $ip = getIP();
 $ref = getRef();
 // include/require的方式会阻塞,导致并发时有些请求来不及写入pv.php中的数据库,无法正常重定向,所以用这种方式实现非阻塞
 // 但是此时相关信息已经丢失了,需要手动获取ip和调用地址传入
-fclose(popen('php '.$path.' -a '.$ip.' -b '.$ref.' &', 'r'));
+//fclose(popen('php '.$path.' -a '.$ip.' -b '.$ref.' &', 'r'));
+fclose(popen('php pv.php -a '.$ip.' -b '.$ref.' &', 'r'));
+
 // 获取客户端ip地址
 function getIP()
 {
